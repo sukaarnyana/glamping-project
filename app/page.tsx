@@ -1,65 +1,138 @@
-import Image from "next/image";
+import Navbar from "./components/layout/Navbar";
+import KatalogContent from "./contents/KatalogContent";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <div className="min-h-screen p-4">
+      <div className="">
+        <Navbar />
+      </div>
+      <div className="mt-3 px-4 py-72 rounded-2xl relative bg-[url('/images/glamping.jpg')] bg-cover bg-center bg-no-repeat w-full">
+        <div className="absolute bottom-6 left-6 text-white pl-3">
+          <h1 className="text-7xl font-medium font-serif">Retreat Eksklusif </h1>
+          <h1 className="text-7xl font-medium font-serif">di Pelukan Alam</h1>
+          <div className="my-8">
+            <button
+              className="bg-slate-200 hover:bg-slate-300 text-black py-2 px-4 rounded-full flex items-center gap-2"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Explore your room
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="size-3"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8.25 3.75H19.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-1.5 0V6.31L5.03 20.03a.75.75 0 0 1-1.06-1.06L17.69 5.25H8.25a.75.75 0 0 1 0-1.5Z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </div>
+      <div className="mt-8 w-full">
+        <div className="grid grid-cols-2 p-10">
+          <div className="text-black">
+            <h1 className="text-5xl font-semibold font-sans">1250+ Companies</h1>
+            <h1 className="text-5xl font-semibold font-sans mt-2">Trust by us</h1>
+          </div>
+          <div className="text-black">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatum, veritatis, natus magnam nemo quia recusandae nulla doloremque aperiam ipsam consectetur molestiae voluptate, reiciendis ex vel atque sint facilis consequatur!
+            <div className="my-8 flex justify-between w-1/2 gap-1">
+              <div>
+                <button
+                  className="bg-black text-white py-2 px-4 rounded-full flex items-center gap-2"
+                >
+                  More Listing
+                </button>
+              </div>
+              <div>
+                <button
+                  className="bg-white text-black py-2 px-4 rounded-full flex items-center gap-4"
+                >
+                  Request a Callback
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="size-5"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 px-10 pb-10 bg-white gap-10">
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 bg-[url('/images/tent.png')] bg-cover bg-center rounded-full bg-white"></div>
+            <p className="text-black font-serif text-xl">
+              Sweet Camp
+            </p>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 bg-[url('/images/breakfast.png')] bg-cover bg-center rounded-full bg-white"></div>
+            <p className="text-black font-serif text-xl">
+              Free Breakfast
+            </p>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 bg-[url('/images/hiking.png')] bg-cover bg-center rounded-full bg-white"></div>
+            <p className="text-black font-serif text-xl">
+              Mountain View
+            </p>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div className="w-14 h-14 bg-[url('/images/waves.png')] bg-cover bg-center rounded-full bg-white"></div>
+            <p className="text-black font-serif text-xl">
+              Relax & Chill
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="px-10">
+        <div className="border-b-3 pt-5"></div>
+      </div>
+      <div className="flex justify-between items-center px-10 mt-15">
+        <div>
+          <h1 className="text-5xl font-semibold font-sans text-black mb-4">Popular Listings</h1>
+          <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <button className="bg-black text-white py-2 px-4 rounded-full flex items-center gap-5">
+          More Listing
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            className="size-5"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+            <path
+              fillRule="evenodd"
+              d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
+              clipRule="evenodd"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+          </svg>
+        </button>
+      </div>
+
+      <div className="mt-10 h-full w-full px-10">
+        <KatalogContent />
+      </div>
     </div>
-  );
+  )
 }
+
+
+
+
