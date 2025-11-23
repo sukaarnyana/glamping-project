@@ -4,7 +4,7 @@ export default function KatalogContent() {
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
                     className="w-full max-h-56 object-cover"
-                    src="/images/glamping.jpg"
+                    src="/images/camp/camp1.jpg"
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
@@ -25,7 +25,7 @@ export default function KatalogContent() {
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
                     className="w-full max-h-56 object-cover"
-                    src="/images/glamping.jpg"
+                    src="/images/camp/camp2.jpg"
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
@@ -46,7 +46,7 @@ export default function KatalogContent() {
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
                     className="w-full max-h-56 object-cover"
-                    src="/images/glamping.jpg"
+                    src="/images/camp/camp3.jpg"
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
@@ -67,7 +67,7 @@ export default function KatalogContent() {
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
                     className="w-full max-h-56 object-cover"
-                    src="/images/glamping.jpg"
+                    src="/images/camp/camp4.jpg"
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
