@@ -1,9 +1,10 @@
 export default function KatalogContent() {
     return (
+        
         <div className="grid grid-cols-4 gap-2">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
-                    className="w-full max-h-56 object-cover"
+                    className="w-full max-h-56 object-cover transition duration-300 hover:scale-110"
                     src="/images/camp/camp1.jpg"
                     alt="Sunset in the mountains"
                 />
@@ -24,7 +25,7 @@ export default function KatalogContent() {
             </div>
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
-                    className="w-full max-h-56 object-cover"
+                    className="w-full max-h-56 object-cover transition duration-300 hover:scale-110"
                     src="/images/camp/camp2.jpg"
                     alt="Sunset in the mountains"
                 />
@@ -45,7 +46,7 @@ export default function KatalogContent() {
             </div>
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
-                    className="w-full max-h-56 object-cover"
+                    className="w-full max-h-56 object-cover transition duration-300 hover:scale-110"
                     src="/images/camp/camp3.jpg"
                     alt="Sunset in the mountains"
                 />
@@ -66,7 +67,7 @@ export default function KatalogContent() {
             </div>
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
-                    className="w-full max-h-56 object-cover"
+                    className="w-full max-h-56 object-cover transition duration-300 hover:scale-110"
                     src="/images/camp/camp4.jpg"
                     alt="Sunset in the mountains"
                 />
