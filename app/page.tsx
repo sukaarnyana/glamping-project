@@ -1,5 +1,6 @@
 import Navbar from "./components/layout/Navbar";
 import AboutContent from "./contents/AboutContent";
+import AddressContent from "./contents/AddressContent";
 import KatalogContent from "./contents/KatalogContent";
 
 export default function Home() {
@@ -127,19 +128,22 @@ export default function Home() {
         <div className="mt-10 h-full w-full px-10">
           <KatalogContent />
         </div>
-        <div className="mt-10 px-10 pt-10">
-          <div className="flex items-center gap-4">
+        <div className="mt-10 pt-10">
+          <div className="flex items-center gap-4 justify-center">
             <h1 className="text-5xl font-semibold font-sans text-black mb-4">About Us</h1>
           </div>
           <div className="flex items-center gap-3">
-            <div className="rounded-l-lg pt-1 w-52 bg-black"></div>
-            <div className="pt-1 w-3 rounded-r-lg bg-black"></div>
+            {/* <div className="rounded-l-lg pt-1 w-52 bg-black"></div> */}
+            {/* <div className="pt-1 w-3 rounded-r-lg bg-black"></div> */}
           </div>
         </div>
       </div>
-      <div className="mt-1 mb-10 py-40 w-full rounded-lg">
+      <div className=" bg-zinc-500 py-10 w-full rounded-t-3xl">
         <div className=" h-full w-full px-10">
           <AboutContent />
+        </div>
+        <div className="bg-zinc-500 py40">
+          <AddressContent />
         </div>
       </div>
     </>
