@@ -73,7 +73,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-4 px-10 pb-10 bg-white gap-10">
+          <div id="services" className="grid grid-cols-4 px-10 pb-10 bg-white gap-10">
 
             {/* ITEM 1 */}
             <div className="flex items-center gap-4 group transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
@@ -113,7 +113,7 @@ export default function Home() {
         <div className="px-10">
           <div className="border-b-3 pt-5"></div>
         </div>
-        <div className="flex justify-between items-center px-10 mt-15">
+        <div id='glamlist' className="flex justify-between items-center px-10 mt-15">
           <div>
             <h1 className="text-5xl font-semibold font-sans text-black mb-4">Popular Listings</h1>
             <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -142,7 +142,7 @@ export default function Home() {
         <div className=" h-full w-full px-10">
           <AboutContent />
         </div>
-        <div className="bg-zinc-500 py40">
+        <div className="bg-zinc-500 py40 mt-5 mb-5 w-full h-full">
           <AddressContent />
         </div>
       </div>
