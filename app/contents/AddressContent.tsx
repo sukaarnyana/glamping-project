@@ -2,7 +2,7 @@
 
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import L from "leaflet";
+// import L from "leaflet";
 
 // FIX missing default icon
 import iconRetinaUrl from "leaflet/dist/images/marker-icon-2x.png";
