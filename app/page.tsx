@@ -1,7 +1,6 @@
 import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import AboutContent from "./contents/AboutContent";
-import AddressContent from "./contents/AddressContent";
 import CarouselContent from "./contents/CarouselContent";
 import KatalogContent from "./contents/KatalogContent";
 
