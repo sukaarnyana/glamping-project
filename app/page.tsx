@@ -1,6 +1,8 @@
+import Footer from "./components/layout/Footer";
 import Navbar from "./components/layout/Navbar";
 import AboutContent from "./contents/AboutContent";
 import AddressContent from "./contents/AddressContent";
+import CarouselContent from "./contents/CarouselContent";
 import KatalogContent from "./contents/KatalogContent";
 
 export default function Home() {
@@ -73,33 +75,25 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="services" className="grid grid-cols-4 px-10 pb-10 bg-white gap-10">
-
-            {/* ITEM 1 */}
+          <div id="service" className="grid grid-cols-4 px-10 pb-10 bg-white gap-10">
             <div className="flex items-center gap-4 group transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
               <div className="w-14 h-14 bg-[url('/images/tent.png')] bg-cover bg-center rounded-full bg-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"></div>
               <p className="text-black font-serif text-xl transition-all duration-300 group-hover:tracking-wide">
                 Sweet Camp
               </p>
             </div>
-
-            {/* ITEM 2 */}
             <div className="flex items-center gap-4 group transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
               <div className="w-14 h-14 bg-[url('/images/breakfast.png')] bg-cover bg-center rounded-full bg-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"></div>
               <p className="text-black font-serif text-xl transition-all duration-300 group-hover:tracking-wide">
                 Free Breakfast
               </p>
             </div>
-
-            {/* ITEM 3 */}
             <div className="flex items-center gap-4 group transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
               <div className="w-14 h-14 bg-[url('/images/hiking.png')] bg-cover bg-center rounded-full bg-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"></div>
               <p className="text-black font-serif text-xl transition-all duration-300 group-hover:tracking-wide">
                 Mountain View
               </p>
             </div>
-
-            {/* ITEM 4 */}
             <div className="flex items-center gap-4 group transition-all duration-300 hover:scale-105 hover:-translate-y-1 cursor-pointer">
               <div className="w-14 h-14 bg-[url('/images/waves.png')] bg-cover bg-center rounded-full bg-white transition-all duration-300 group-hover:scale-110 group-hover:rotate-3"></div>
               <p className="text-black font-serif text-xl transition-all duration-300 group-hover:tracking-wide">
@@ -130,7 +124,15 @@ export default function Home() {
         </div>
         <div className="mt-10 pt-10">
           <div className="flex items-center gap-4 justify-center">
-            <h1 className="text-5xl font-semibold font-sans text-black mb-4">About Us</h1>
+            {/* <h1 className="text-5xl font-semibold font-sans text-black mb-4">About Us</h1> */}
+            <div className="text-center mb-3">
+              <h1 className="text-5xl md:text-5xl font-bold text-gray-900 mb-4">
+                About Us
+              </h1>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Discover more about our mission to provide unforgettable glamping experiences
+              </p>
+            </div>
           </div>
           <div className="flex items-center gap-3">
             {/* <div className="rounded-l-lg pt-1 w-52 bg-black"></div> */}
@@ -138,12 +140,27 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" bg-zinc-500 py-10 w-full rounded-t-3xl">
-        <div className=" h-full w-full px-10">
+      <div className="bg-gradient-to-b from-zinc-800 to-zinc-900 py-12 w-full rounded-t-3xl shadow-2xl">
+        <div className="h-full w-full px-4 md:px-8 lg:px-12">
           <AboutContent />
         </div>
-        <div className="bg-zinc-500 py40 mt-5 mb-5 w-full h-full">
-          <AddressContent />
+        <div className="mt-24 md:mt-32 w-full px-0 bg-gradient-to-b from-white to-zinc-50 py-16 md:py-24">
+          <div className="max-w-[1500px] mx-auto px-4 md:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Our Camp Gallery
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Explore our beautiful camping locations through these stunning visuals
+              </p>
+            </div>
+            <div className="px-2">
+              <CarouselContent />
+            </div>
+          </div>
+        </div>
+        <div className="mt-52 h-full w-full px-4 md:px-8 lg:px-12">
+          <Footer />
         </div>
       </div>
     </>

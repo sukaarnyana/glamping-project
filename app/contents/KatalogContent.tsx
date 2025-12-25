@@ -1,6 +1,5 @@
 export default function KatalogContent() {
     return (
-        
         <div className="grid grid-cols-4 gap-2">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img
@@ -9,7 +8,7 @@ export default function KatalogContent() {
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+                    <div className="font-bold text-xl mb-2 text-gray-500">Breakfast with view</div>
                     <p className="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                         quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
@@ -30,7 +29,7 @@ export default function KatalogContent() {
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+                    <div className="font-bold text-xl mb-2 text-gray-500">Relax And Chill</div>
                     <p className="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                         quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
@@ -51,7 +50,7 @@ export default function KatalogContent() {
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+                    <div className="font-bold text-xl mb-2 text-gray-500">Silence Night</div>
                     <p className="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                         quia, nulla! Maiores et perferendis eaque, exercitationem praesentium
@@ -72,7 +71,7 @@ export default function KatalogContent() {
                     alt="Sunset in the mountains"
                 />
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+                    <div className="font-bold text-xl mb-2 text-gray-500">Cooking Together</div>
                     <p className="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
                         quia, nulla! Maiores et perferendis eaque, exercitationem praesentium

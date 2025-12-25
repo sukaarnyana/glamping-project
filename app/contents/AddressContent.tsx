@@ -23,9 +23,7 @@ const pin = new L.Icon({
 
 export default function AddressContent() {
     return (
-        <div className="bg-white rounded-2xl shadow-xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-
-            {/* MAP CARD */}
+        <div className=" rounded-2xl shadow-xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="h-[350px] rounded-xl overflow-hidden border border-emerald-200 shadow relative">
                 <MapContainer
                     center={[-8.65, 115.21]}
