@@ -158,7 +158,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-52 h-full w-full px-4 md:px-8 lg:px-12">
+        <div className="mt-3 h-full w-full px-4 md:px-8 lg:px-12 ">
           <Footer />
         </div>
       </div>
